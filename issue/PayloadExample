@@ -1,0 +1,41 @@
+2) Push notification
+
+POST /parceiros/push_por_cpf
+
+ Content-type: application/json
+
+ Authorization: Token <XXXXXX>
+
+ Host: https://centernorte.mobitsplaza.com.br/admin
+
+[ 
+
+  { "cpf": "<cpf do cliente>", "mensagem": "<mensagem a enviar>"},
+
+  { "cpf": "<cpf do cliente>", "mensagem": "<mensagem a enviar>", "url": "https://qqsite.com"},
+
+  ...
+
+]
+
+ 
+
+As respostas possíveis são:
+
+HTTP 400 - JSON mal formado
+
+HTTP 200 - array JSON com uma resposta para cada item fornecido na request. Exemplos:
+
+[
+
+{"status":200,"cpf":"84876131791"}, //cliente encontrado e mensagem enviada para seus aparelhos
+
+{"status":201,"cpf":"18225950453"}, //cliente encontrado, mas não possui aparelhos cadastrados
+
+{"status":404,"cpf":"123654789032"}, //cliente NÃO encontrado
+
+{"status":400,"cpf":"123654789032","erro":"mensagem não fornecida"}, //erro de validação da mensagem
+
+{"status":400,"cpf":"123654789032","erro":"mensagem maior que o limite de 140 caracteres"}, //erro de validação da mensagem
+
+]
