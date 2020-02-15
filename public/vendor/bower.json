@@ -1,12 +1,12 @@
 {
   "name": "jb-custom-activity",
-  "homepage": "https://github.com/lennonalvesdias/journey-builder-custom-activity",
+  "homepage": "https://github.com/guisantoslima/cts-pushnotification-ccn-repository",
   "authors": [
-    "Lennon Dias"
+    "Guilherme Lima"
   ],
   "description": "",
   "main": "",
-  "license": "MIT",
+  "license": "CCN",
   "private": true,
   "ignore": [
     "**/.*",
