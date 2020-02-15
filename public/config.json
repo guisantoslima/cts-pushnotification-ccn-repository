@@ -1,0 +1,76 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/icon.png",
+    "iconSmall": "images/icon.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Push Notification",
+      "description": "Push Notification Salesforce Marketing Cloud to MobitsAPP"
+    },
+    "pt-BR": {
+      "name": "Notificação Push",
+      "description": "Integração Push Salesforce Marketing Cloud para MobitsAPP"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/execute",
+      "verb": "POST",
+      "body": "",
+      "headers": "{ \"foo\": \"bar\" }",
+      "format": "json",
+      "useJwt": true,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "3daedc7f-5670-4301-a6e0-c50cae0d8273",
+    "save": {
+      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "publish": {
+      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/publish",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "validate": {
+      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/validate",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "stop": {
+      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/stop",
+      "verb": "POST",
+      "useJwt": true
+    }
+  },
+  "wizardSteps": [
+    {
+      "label": "Configure Step",
+      "key": "step1"
+    }
+  ],
+  "userInterfaces": {
+    "configModal": {
+      "height": 200,
+      "width": 300,
+      "fullscreen": true
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": []
+      }
+    }
+  }
+}
