@@ -1,60 +1,60 @@
 {
   "workflowApiVersion": "1.1",
   "metaData": {
-    "icon": "images/icon.png",
-    "iconSmall": "images/icon.png",
+    "icon": "images/whatsapp.png",
+    "iconSmall": "images/whatsapp.png",
     "category": "message"
   },
   "type": "REST",
   "lang": {
     "en-US": {
-      "name": "Push Notification",
-      "description": "Push Notification Salesforce Marketing Cloud to MobitsAPP"
+      "name": "Send Whatsapp HSM",
+      "description": "HSM template submission via WhatsApp."
     },
     "pt-BR": {
-      "name": "Notificação Push",
-      "description": "Integração Push Salesforce Marketing Cloud para MobitsAPP"
+      "name": "Send Whatsapp HSM",
+      "description": "Envio de template HSM via WhatsApp."
     }
   },
   "arguments": {
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/execute",
+      "url": "https://journey-salesforce.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
-      "headers": "{ \"foo\": \"bar\" }",
+      "header": "",
       "format": "json",
       "useJwt": true,
       "timeout": 10000
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "9f1e38cc-7b49-418d-8990-a96783e95595",
+    "applicationExtensionKey": "045ae7c7-daf3-467c-b57d-7d0fe3634ce2",
     "save": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
+      "url": "https://journey-salesforce.herokuapp.com/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/publish",
+      "url": "https://journey-salesforce.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/validate",
+      "url": "https://journey-salesforce.herokuapp.com/journeybuilder/validate",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/stop",
+      "url": "https://journey-salesforce.herokuapp.com/journeybuilder/stop",
       "verb": "POST",
       "useJwt": true
     }
   },
   "wizardSteps": [
     {
-      "label": "Configure Step",
+      "label": "Configure HSM Template",
       "key": "step1"
     }
   ],
