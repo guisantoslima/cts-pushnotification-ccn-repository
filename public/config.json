@@ -1,47 +1,15 @@
 {
-  "workflowApiVersion": "1.1",
-  "metaData": {
-    "icon": "images/whatsapp.png",
-    "iconSmall": "images/whatsapp.png",
-    "category": "message"
-  },
-  "type": "REST",
-  "lang": {
-    "en-US": {
-      "name": "Send Whatsapp HSM",
-      "description": "HSM template submission via WhatsApp."
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "message"
     },
-<<<<<<< HEAD
-    "pt-BR": {
-      "name": "Send Whatsapp HSM",
-      "description": "Envio de template HSM via WhatsApp."
-    }
-  },
-  "arguments": {
-    "execute": {
-      "inArguments": [],
-      "outArguments": [],
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/execute",
-      "verb": "POST",
-      "body": "",
-      "header": "",
-      "format": "json",
-      "useJwt": true,
-      "timeout": 10000
-    }
-  },
-  "configurationArguments": {
-    "applicationExtensionKey": "9f1e38cc-7b49-418d-8990-a96783e95595",
-    "save": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
-      "verb": "POST",
-      "useJwt": true
-=======
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Push Notification",
-          "description": "Template para uma atividade customizada no Journey Builder",
+            "name": "Template",
+          "description": "A Template for a custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
     },
@@ -61,43 +29,46 @@
             "useJwt": true,
             "timeout": 10000
         }
->>>>>>> parent of b1be3df... alteração 15/02 v8
     },
-    "publish": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/publish",
-      "verb": "POST",
-      "useJwt": true
-    },
-    "validate": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/validate",
-      "verb": "POST",
-      "useJwt": true
-    },
-    "stop": {
-      "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/stop",
-      "verb": "POST",
-      "useJwt": true
-    }
-  },
-  "wizardSteps": [
-    {
-      "label": "Configure HSM Template",
-      "key": "step1"
-    }
-  ],
-  "userInterfaces": {
-    "configModal": {
-      "height": 200,
-      "width": 300,
-      "fullscreen": true
-    }
-  },
-  "schema": {
-    "arguments": {
-      "execute": {
-        "inArguments": [],
-        "outArguments": []
+    "configurationArguments": {
+      "applicationExtensionKey": "9f1e38cc-7b49-418d-8990-a96783e95595",
+      "save": {
+        "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
+          "verb": "POST",
+        "useJwt": true
+       },
+       "publish": {
+        "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/publish",
+           "verb": "POST",
+        "useJwt": true
+       },
+      "stop": {
+        "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/stop",
+           "verb": "POST",
+        "useJwt": true
+      },
+      "validate": {
+        "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/validate",
+        "verb": "POST",
+        "useJwt": true
       }
+    },
+    "wizardSteps": [
+        { "label": "Configure Activity", "key": "step1" }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 400,
+            "width": 1000,
+          "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
     }
-  }
 }
