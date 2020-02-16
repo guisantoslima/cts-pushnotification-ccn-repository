@@ -8,7 +8,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Push Notification",
+            "name": "Custom Push",
           "description": "Template para uma atividade customizada no Journey Builder",
           "step1Label": "Configure Activity"
         }
