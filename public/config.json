@@ -30,7 +30,7 @@
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "045ae7c7-daf3-467c-b57d-7d0fe3634ce2",
+    "applicationExtensionKey": "9f1e38cc-7b49-418d-8990-a96783e95595",
     "save": {
       "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
       "verb": "POST",
