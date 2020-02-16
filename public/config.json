@@ -8,8 +8,8 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+            "name": "Push Notification",
+          "description": "Template para uma atividade customizada no Journey Builder",
           "step1Label": "Configure Activity"
         }
     },
