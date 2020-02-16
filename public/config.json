@@ -11,6 +11,7 @@
       "name": "Send Whatsapp HSM",
       "description": "HSM template submission via WhatsApp."
     },
+<<<<<<< HEAD
     "pt-BR": {
       "name": "Send Whatsapp HSM",
       "description": "Envio de template HSM via WhatsApp."
@@ -35,6 +36,32 @@
       "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
+=======
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Push Notification",
+          "description": "Template para uma atividade customizada no Journey Builder",
+          "step1Label": "Configure Activity"
+        }
+    },
+    "arguments": {
+        "execute": {
+           "inArguments":[
+				{
+                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                }									
+			],
+          "outArguments": [],
+          "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/execute",
+           "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+>>>>>>> parent of b1be3df... alteração 15/02 v8
     },
     "publish": {
       "url": "https://cts-pushnotification-ccn.herokuapp.com/journeybuilder/publish",
