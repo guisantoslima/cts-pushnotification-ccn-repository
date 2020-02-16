@@ -1,7 +1,7 @@
 {
-  "name": "jb-activity-template",
+  "name": "cts-pushnotification-ccn",
   "version": "1.0.0",
-  "description": "Journey Builder Activity Template",
+  "description": "Journey Builder Custom Activity",
   "engines": {
     "node": "6.11.1"
   },
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devsutd/journey-builder-activity-template.git"
+    "url": "git+https://github.com/guisantoslima/cts-pushnotification-ccn-repository.git"
   },
   "keywords": [
     "journey",
