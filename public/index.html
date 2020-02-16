@@ -7,36 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/require.js"></script>
-    <script type="text/javascript">
-        (function () {
-            var config = {
-                baseUrl: 'js'
-            };
-
-            var dependencies = [
-                'customActivity'
-            ];
-
-            require(config, dependencies);
-        })();
-    </script>
 </head>
 
 <body>
-    <div id="step1" class="step">
-        <div class="slds-grid">
+    <h1>JSON Code</h1>
+    <textarea id="configuration"></textarea>
 
-            <main class="slds-col">
-               
-                <h1>Push!</h1>
-                
-            </main>
-            
-
-        </div>
-
-    </div>
+    <script src="postmonger.js"></script>
+    <script src="activity.js"></script>
+    
 </body>
 
 </html>
